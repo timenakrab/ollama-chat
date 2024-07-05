@@ -1,0 +1,79 @@
+{
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"sourceType": "module",
+		"allowImportExportEverywhere": false,
+		"codeFrame": false,
+		"ecmaVersion": 2020
+	},
+	"extends": [
+		"prettier",
+		"plugin:react/recommended",
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"plugins": ["react", "react-hooks"],
+	"env": {
+		"es6": true,
+		"browser": true,
+		"jest": true,
+		"node": true,
+		"commonjs": true
+	},
+	"rules": {
+		"@typescript-eslint/interface-name-prefix": "off",
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-unused-vars": "warn",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"prefer-promise-reject-errors": ["off"],
+		"react/jsx-uses-react": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": ["off"],
+		"react/prop-types": "off",
+		"react-hooks/rules-of-hooks": "warn",
+		"react-hooks/exhaustive-deps": [
+			"warn",
+			{
+				"additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
+			}
+		],
+		"no-var": "error",
+		"no-console": "warn",
+		"array-callback-return": "off",
+		"complexity": ["error", 18],
+		"consistent-return": "off",
+		"default-case": "error",
+		"default-case-last": "off",
+		"no-eval": "error",
+		"react/display-name": "off",
+		"no-return-await": "off",
+		"eol-last": ["error", "always"],
+		"padding-line-between-statements": [
+			"error",
+			{
+				"blankLine": "always",
+				"prev": "*",
+				"next": "return"
+			}
+		],
+		"no-unreachable-loop": "off",
+		"no-loop-func": "error",
+		"no-multi-str": "error",
+		"no-nested-ternary": "off",
+		"no-duplicate-imports": "error",
+		"prefer-const": "error",
+		"prefer-template": "error",
+		"prefer-rest-params": "error",
+		"no-useless-rename": "error",
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"block-spacing": "error",
+		"linebreak-style": ["error", "unix"],
+		"arrow-parens": ["error", "always"],
+		"template-curly-spacing": ["error", "never"],
+		"no-unused-vars": "error"
+	}
+}
+

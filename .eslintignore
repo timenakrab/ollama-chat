@@ -1,0 +1,11 @@
+.env.local
+public/
+dist/
+src/dist/
+src/index.tsx
+node_modules/
+
+src/reportWebVitals.ts
+src/types/**/*
+src/utils/jsxFunctions.tsx
+src/setupProxy.js
